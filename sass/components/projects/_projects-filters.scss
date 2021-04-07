@@ -1,0 +1,37 @@
+.projects__filters {
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
+}
+
+.projects__filters-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -4px -8px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
+}
+
+.projects__filter-elem {
+  margin: 0 4px 8px;
+  padding: 6px 22px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  color: var(--highlight-color);
+  font-weight: 500;
+  font-size: 16px;
+  background-color: var(--light-grey);
+
+  &:hover {
+    color: $white-color;
+    background-color: $accent-color;
+  }
+}

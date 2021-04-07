@@ -1,0 +1,23 @@
+.socials {
+  display: inline-flex;
+  align-items: center;
+}
+
+.socials__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.socials__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  --color4: #afb1b8;
+
+  &:hover {
+    background-color: $accent-color;
+    --color4: #fff;
+  }
+}

@@ -1,0 +1,36 @@
+.work-scope {
+  padding-top: 0;
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.work-scope__list {
+  display: flex;
+  margin: -15px;
+}
+
+.work-scope__item {
+  position: relative;
+  margin: 15px;
+  width: calc((100% - 90px) / 3);
+}
+
+.work-scope__img {
+  width: 100%;
+}
+
+.work-scope__title {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  font-weight: 700;
+  line-height: 1.17;
+  color: $white-color;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: rgba(47, 48, 58, 0.8);
+}

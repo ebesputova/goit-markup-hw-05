@@ -10,53 +10,77 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/modern-normalize.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/portfolio.min.css" />
   </head>
   <body>
     <header class="page-header">
-      <div class="container page-header__wrapper">
-        <a class="logo" href="./index.html" lang="en"
+      <div class="container page-header__inner">
+        <a class="logo page-header__logo" href="./index.html" lang="en"
           ><span class="logo__accent">Web</span>Studio</a
         >
-        <nav class="page-header__nav">
-          <ul class="nav-list">
-            <li class="nav-list__item">
-              <a class="nav-list__link" href="./index.html">Студия</a>
-            </li>
-            <li class="nav-list__item nav-list__item--active">
-              <a class="nav-list__link" href="./portfolio.html">Портфолио</a>
-            </li>
-            <li class="nav-list__item">
-              <a class="nav-list__link" href="">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <ul class="page-header__contact-list">
-          <li class="page-header__contact-item">
-            <a
-              class="page-header__contact-link"
-              href="mailto:info@devstudio.com"
-            >
-              <svg class="page-header__contact-icon" height="12" width="16">
-                <use href="./images/symbol-defs.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="page-header__contact-item">
-            <a class="page-header__contact-link" href="tel:+380961111111">
-              <svg class="page-header__contact-icon" height="16" width="10">
-                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+        <div class="mob-menu page-header__inner page-header__united-block">
+          <div class="mob-menu-toggle mob-menu-toggle--inner">
+            <svg class="mob-menu-icon" width="40" height="40">
+              <use
+                class="mob-menu-icon"
+                href="./images/symbol-defs.svg#close-menu"
+              ></use>
+            </svg>
+          </div>
+          <nav class="page-header__nav">
+            <ul class="nav-list">
+              <li class="nav-list__item">
+                <a class="nav-list__link" href="./index.html">Студия</a>
+              </li>
+              <li class="nav-list__item nav-list__item--active">
+                <a class="nav-list__link" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="nav-list__item">
+                <a class="nav-list__link" href="">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="mob-menu__bottom">
+            <ul class="page-header__contact-list">
+              <li class="page-header__contact-item">
+                <a
+                  class="page-header__contact-link"
+                  href="mailto:info@devstudio.com"
+                >
+                  <svg class="page-header__contact-icon" height="12" width="16">
+                    <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                  </svg>
+                  info@devstudio.com</a
+                >
+              </li>
+              <li
+                class="page-header__contact-item page-header__contact-phone--mob"
+              >
+                <a class="page-header__contact-link" href="tel:+380961111111">
+                  <svg class="page-header__contact-icon" height="16" width="10">
+                    <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+            <ul class="mob-menu__socials-list">
+              <li class="mob-menu__socials-item">Instagram</li>
+              <li class="mob-menu__socials-item">Twitter</li>
+              <li class="mob-menu__socials-item">Facebook</li>
+              <li class="mob-menu__socials-item">LinkedIn</li>
+            </ul>
+          </div>
+        </div>
+        <div class="mob-menu-toggle">
+          <svg class="mob-menu-icon" width="40" height="40">
+            <use href="./images/symbol-defs.svg#icon-burger"></use>
+          </svg>
+        </div>
       </div>
     </header>
     <main>
-      <section class="high-section projects">
+      <section class="section projects">
         <div class="projects__filters container">
           <div class="projects__filters-wrapper">
             <button class="projects__filter-elem" type="button">Все</button>
@@ -67,6 +91,21 @@
               Приложения
             </button>
             <button class="projects__filter-elem" type="button">Дизайн</button>
+            <button class="projects__filter-elem" type="button">
+              Маркетинг
+            </button>
+            <button class="projects__filter-elem" type="button">
+              Маркетинг
+            </button>
+            <button class="projects__filter-elem" type="button">
+              Маркетинг
+            </button>
+            <button class="projects__filter-elem" type="button">
+              Маркетинг
+            </button>
+            <button class="projects__filter-elem" type="button">
+              Маркетинг
+            </button>
             <button class="projects__filter-elem" type="button">
               Маркетинг
             </button>
@@ -249,21 +288,24 @@
         </div>
       </section>
     </main>
-    <footer>
-      <div class="page-footer container">
-        <div class="page-footer__block">
-          <a class="logo logo--white" href="./index.html" lang="en"
+    <footer class="page-footer">
+      <div class="page-footer__wrapper container">
+        <div class="page-footer__col page-footer__col--md-6">
+          <a
+            class="page-footer__logo logo logo--white"
+            href="./index.html"
+            lang="en"
             ><span class="logo__accent">Web</span>Studio</a
           >
           <address class="page-footer__contacts">
             <span class="page-footer__address">
-              г. Киев, пр-т Леси Украинки, 26 </span
-            ><br />
-            info@example.com <br />
-            +38 099 111 11 11 <br />
+              г. Киев, пр-т Леси Украинки, 26
+            </span>
+            <span class="page-footer__mail">info@example.com</span>
+            <span class="page-footer__phone">+38 099 111 11 11</span>
           </address>
         </div>
-        <div>
+        <div class="page-footer__col page-footer__col--md-6">
           <b class="subscribe-offer">Присоединяйтесь</b>
           <ul class="socials">
             <li class="socials__item">
@@ -296,7 +338,25 @@
             </li>
           </ul>
         </div>
+        <div class="page-footer__col">
+          <b class="subscribe-offer">Подпишитесь на рассылку</b>
+          <form class="subscribe-form">
+            <input
+              type="email"
+              name="email"
+              class="subscribe-form__input"
+              placeholder="E-mail"
+            />
+            <button class="page-button" type="submit">
+              <span>Подписаться</span>
+              <svg width="24" height="24" class="page-button__icon--append">
+                <use href="./images/symbol-defs.svg#icon-subscribe"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

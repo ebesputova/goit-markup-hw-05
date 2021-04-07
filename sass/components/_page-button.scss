@@ -1,0 +1,19 @@
+.page-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 9px 25px;
+  border-radius: 4px;
+  min-width: 200px;
+  border: 1px solid transparent;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  color: $white-color;
+  background-color: $accent-color;
+}
+
+.page-button__icon--append {
+  margin-left: 10px;
+}

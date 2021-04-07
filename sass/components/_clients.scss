@@ -1,0 +1,35 @@
+.clients__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.clients__item {
+  margin: 15px;
+  width: calc((100% - 60px) / 2);
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 90px) / 3);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 180px) / 6);
+  }
+}
+
+.clients__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  --color4: #afb1b8;
+  --color3: #afb1b8;
+
+  &:hover {
+    --color4: #2196f3;
+    --color3: #2196f3;
+    border-color: $accent-color;
+  }
+}
